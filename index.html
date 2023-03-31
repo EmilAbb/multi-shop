@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Shop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/slick.less">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-up">
+            <div class="header-up-inner container">
+                <div class="about">
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                    <a href="">Help</a>
+                    <a href="">FAQs</a>
+                </div>
+                <div class="aue">
+                    <div class="account">
+                        <a id="account-button" href="javascript:void(0)">My Account <i
+                                class="fa-solid fa-sort-down"></i></a>
+                        <div class="account-dropdown">
+                            <a href="">Sign in</a>
+                            <a href="">Sign up</a>
+                        </div>
+                    </div>
+                    <div class="usd">
+                        <a id="usd-btn" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
+                        <div class="usd-dropdown">
+                            <a href="">EUR</a>
+                            <a href="">GBP</a>
+                            <a href="">CAD</a>
+                        </div>
+                    </div>
+                    <div class="en">
+                        <a id="en-btn" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                        <div class="en-dropdown">
+                            <a href="">FR</a>
+                            <a href="">AR</a>
+                            <a href="">RU</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header-down-icons-mobile">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="icon-zero">
+                        <p>0</p>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="icon-zero">
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-midlle">
+            <div class="mobile-menu">
+                <ul class="menu-inner">
+                    <li><a class="" href="javascript:void(0)">Home</a></li>
+                    <li>
+                        <a href="">Shop</a>
+                    </li>
+
+                    <li><a href="./shop-detail.html">Shop Detail</a></li>
+                    <li><a class="mobile-pages" href="javascript:void(0)">Pages <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="mobile-pages-dropdown">
+                            <li><a class="mobile-cart" href=""></a>Shopping Cart</li>
+                            <li><a class="mobile-check" href="">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="header-midlle-inner container">
+                <div class="header-logo">
+                    <div class="multi-logo">
+                        <h2>MULTI</h2>
+                    </div>
+                    <div class="shop-logo">
+                        <h2>SHOP</h2>
+                    </div>
+                </div>
+
+                <div class="header-input">
+                    <input class="search-input" type="text" placeholder="Search for products" required>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="header-contact">
+                    <p>Customer Service</p>
+                    <h5>051 629 66 74</h5>
+
+                </div>
+
+                <div class="hamburger-icon">
+                    <button class="hamburger-button" onclick="toggleHeader()"> <i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-down">
+            <div class="header-down-inner container">
+                <div class="header-categories">
+                    <p><i class="fa-solid fa-bars hamburger"></i>Categories</p>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <div class="categories-dropdown">
+                        <ul>
+                            <li><a href="javascript:void(0)">Dresses <i
+                                        class="fa-solid fa-chevron-right right-arrow"></i></a>
+                                <ul class="dropdown-inner">
+                                    <li><a href="javascript:void(0)">Men's Dress</a></li>
+                                    <li><a href="javascript:void(0)">Women's Dress</a></li>
+                                    <li><a href="javascript:void(0)">Baby's Dress</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)">Shirts</a></li>
+
+                            <li><a href="javascript:void(0)">Jeans</a></li>
+
+                            <li><a href="javascript:void(0)">Swimwear</a></li>
+
+                            <li><a href="javascript:void(0)">Sportswear</a></li>
+
+                            <li><a href="javascript:void(0)">Jumpsuits</a></li>
+
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+
+                            <li><a href="javascript:void(0)">Jackets</a></li>
+
+                            <li><a href="javascript:void(0)">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-down-menu">
+                    <div class="header-down-menu-inner">
+                        <ul class="menu-inner">
+                            <li><a class="home" href="">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./shop-detail.html">Shop Detail</a></li>
+                            <li class="pages"><a href="javascript:void(0)">Pages <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="pages-dropdown">
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li clas="check"><a href="./checkout.html">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-down-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <div class="icon-zero">
+                            <p>0</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="icon-zero">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="courusel container">
+        <div class="courusel-slider">
+            <div class="courusel-slides">
+                <div class="courusel-slide">
+                    <img src="./assets/image/carousel-1.jpg">
+                    <div class="courusel-caption">
+                        <h2>Men Fashion</h2>
+                        <p>Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr
+                            ipsum diam</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="courusel-slide">
+                    <img src="./assets/image/carousel-2.jpg">
+                    <div class="courusel-caption">
+                        <div class="courusel-caption">
+                            <h2>Women Fashion</h2>
+                            <p>Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr
+                                ipsum diam</p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="courusel-slide">
+                    <img src="./assets/image/carousel-3.jpg">
+                    <div class="courusel-caption">
+                        <div class="courusel-caption">
+                            <h2>Kids Fashion</h2>
+                            <p>Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr
+                                ipsum diam</p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courusel-dots">
+                <span class="courusel-dot"></span>
+                <span class="courusel-dot"></span>
+                <span class="courusel-dot"></span>
+            </div>
+        </div>
+
+        <div class="courusel-special-images">
+            <div class="courusel-special-image">
+                <img src="./assets/image/offer-1 (1).jpg" alt="">
+                <div class="courusel-special-image-title">
+                    <h5>Save 20%</h5>
+                    <h3>Special Offer</h3>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+            <div class="courusel-special-image">
+                <img src="./assets/image/offer-2 (2).jpg" alt="">
+                <div class="courusel-special-image-title">
+                    <h5>Save 20%</h5>
+                    <h3>Special Offer</h3>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="courusel-right">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="quality-shipping">
+        <div class="free-shipping container">
+            <div class="quality">
+                <i class="fa-solid fa-check"></i>
+                <p> Quality Product</p>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p> Free Shipping</p>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <p> 14-Day Return</p>
+            </div>
+            <div class="quality">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p> 24/7 Support</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories container">
+        <div class="categories-up">
+            <div class="categories-title">
+                <h2>CATEGORIES</h2>
+            </div>
+            <div class="categories-dash">
+
+            </div>
+        </div>
+
+        <div class="categories-down">
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-1.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-2.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-3.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-4.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-4.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-3.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-2.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-1.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-2.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-1.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-4.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="categories-card-image">
+                    <img src="./assets/image/cat-3.jpg" alt="">
+                </div>
+                <div class="categories-card-title">
+                    <h4>Category Name</h4>
+                    <p>100 Products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-products container">
+        <div class="featured-products-up">
+            <div class="featured-products-up-title">
+                <h2>FEATURED PRODUCTS</h2>
+            </div>
+            <div class="featured-products-up-dash">
+            </div>
+        </div>
+        <div class="featured-products-down">
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-1.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-2.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-3.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-4.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-5.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-6.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-7.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-8.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="specials-iamges container">
+        <div class="special-image-one">
+            <img src="./assets/image/offer-1 (1).jpg" alt="">
+            <div class="special-image-one-title">
+                <h4>SAVE 20%</h4>
+                <h2>SPECIAL OFFER</h2>
+                <button>Shop Now</button>
+            </div>
+
+        </div>
+        <div class="special-image-one">
+            <img src="./assets/image/offer-2 (1).jpg " alt="">
+            <div class="special-image-one-title">
+                <h4>SAVE 20%</h4>
+                <h2>SPECIAL OFFER</h2>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-products container">
+        <div class="featured-products-up">
+            <div class="featured-products-up-title">
+                <h2 class="recent">RECENT PRODUCTS</h2>
+            </div>
+            <div class="featured-products-up-dash">
+            </div>
+        </div>
+        <div class="featured-products-down">
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-1.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-2.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-3.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-4.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-5.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-6.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-7.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <div class="featured-products-card-image">
+                    <img src="./assets/image/product-8.jpg" alt="">
+                    <div class="featured-products-card-image-icons">
+                        <div class="shop-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="rotate-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products-card-title">
+                    <p>Product Name Goes Here</p>
+                    <div class="featured-products-card-price">
+                        <h2>$123.00</h2>
+                        <h2>$123.00</h2>
+                    </div>
+                    <div class="featured-products-card-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(99)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper mySwiper container home-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide home"><img src="./assets/image/vendor-1.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-2.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-3.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-4.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-5.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-6.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-7.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-8.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-6.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-7.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-8.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-6.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-7.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-8.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-6.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-7.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-8.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-6.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-7.jpg" alt=""></div>
+          <div class="swiper-slide home"><img src="./assets/image/vendor-8.jpg" alt=""></div>
+         
+        </div>
+      </div>
+        
+
+
+
+
+
+    <footer>
+        <div class="footer container">
+            <div class="touch">
+                <h3>GET IN TOUCH</h3>
+                <p class="touch-text">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed
+                    dolor. Rebum tempor no vero est magna amet no</p>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                <p><i class="fa-solid fa-envelope"></i> mail@domain.com</p>
+                <p><i class="fa-solid fa-phone"></i> 051 629 66 74</p>
+            </div>
+            <div class="quick">
+                <h3>QUICK SHOP</h3>
+                <ul>
+                    <li> <span>></span> <a href="">Home</a></li>
+                    <li><span>></span><a href=""> Our Shop</a></li>
+                    <li><span>></span><a href=""> Shop Detail</a></li>
+                    <li><span>></span><a href=""> Shopping Cart</a></li>
+                    <li><span>></span><a href=""> Checkout</a></li>
+                    <li><span>></span><a href=""> Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="quick">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                    <li> <span>></span> <a href="">Home</a></li>
+                    <li><span>></span><a href=""> Our Shop</a></li>
+                    <li><span>></span><a href=""> Shop Detail</a></li>
+                    <li><span>></span><a href=""> Shopping Cart</a></li>
+                    <li><span>></span><a href=""> Checkout</a></li>
+                    <li><span>></span><a href=""> Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                <div class="letter-input">
+                    <input type="email" placeholder="Your Email Adress" required>
+                    <button>Sign Up</button>
+                </div>
+                <div class="follow-us">
+                    <h4>FOLLOWUS</h4>
+                    <div class="follow-us-icons">
+                        <div class="twitter-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="fb-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="linkedin-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="instagram-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end container">
+            <div class="footer-end-left">
+                <p>© Domain.</p>
+                <h4>All Rights Reserved. Designed by</h4>
+                <span> HTML Codex</span>
+            </div>
+
+            <div class="footer-end-right">
+                <img src="./assets/image/payments.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="arrow-up2">
+            <a href="./index.html"> <i class="fa-solid fa-angles-up"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/slick.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

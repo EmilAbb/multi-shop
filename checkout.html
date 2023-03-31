@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-up">
+            <div class="header-up-inner container">
+                <div class="about">
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                    <a href="">Help</a>
+                    <a href="">FAQs</a>
+                </div>
+                <div class="aue">
+                    <div class="account">
+                        <a id="account-button" href="javascript:void(0)">My Account <i
+                                class="fa-solid fa-sort-down"></i></a>
+                        <div class="account-dropdown">
+                            <a href="">Sign in</a>
+                            <a href="">Sign up</a>
+                        </div>
+                    </div>
+                    <div class="usd">
+                        <a id="usd-btn" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
+                        <div class="usd-dropdown">
+                            <a href="">EUR</a>
+                            <a href="">GBP</a>
+                            <a href="">CAD</a>
+                        </div>
+                    </div>
+                    <div class="en">
+                        <a id="en-btn" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                        <div class="en-dropdown">
+                            <a href="">FR</a>
+                            <a href="">AR</a>
+                            <a href="">RU</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header-down-icons-mobile">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="icon-zero">
+                        <p>0</p>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="icon-zero">
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-midlle">
+            <div class="mobile-menu">
+                <ul class="menu-inner">
+                    <li><a class="mobile-home" href="index.html">Home</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="javascript:void(0)">Shop Detail</a></li>
+                    <li><a class="mobile-pages" href="javascript:void(0)">Pages <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="mobile-pages-dropdown">
+                            <li><a class="mobile-cart" href="./assets/"></a>Shopping Cart</li>
+                            <li><a class="mobile-check" href="">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="header-midlle-inner container">
+                <div class="header-logo">
+                    <div class="multi-logo">
+                        <h2>MULTI</h2>
+                    </div>
+                    <div class="shop-logo">
+                        <h2>SHOP</h2>
+                    </div>
+                </div>
+
+                <div class="header-input">
+                    <input class="search-input" type="text" placeholder="Search for products" required>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="header-contact">
+                    <p>Customer Service</p>
+                    <h5>051 629 66 74</h5>
+
+                </div>
+
+                <div class="hamburger-icon">
+                    <button class="hamburger-button" onclick="toggleHeader()"> <i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-down">
+            <div class="header-down-inner container">
+                <div class="header-categories">
+                    <p><i class="fa-solid fa-bars hamburger"></i>Categories</p>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <div class="categories-dropdown">
+                        <ul>
+                            <li><a href="javascript:void(0)">Dresses <i
+                                        class="fa-solid fa-chevron-right right-arrow"></i></a>
+                                <ul class="dropdown-inner">
+                                    <li><a href="javascript:void(0)">Men's Dress</a></li>
+                                    <li><a href="javascript:void(0)">Women's Dress</a></li>
+                                    <li><a href="javascript:void(0)">Baby's Dress</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)">Shirts</a></li>
+
+                            <li><a href="javascript:void(0)">Jeans</a></li>
+
+                            <li><a href="javascript:void(0)">Swimwear</a></li>
+
+                            <li><a href="javascript:void(0)">Sportswear</a></li>
+
+                            <li><a href="javascript:void(0)">Jumpsuits</a></li>
+
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+
+                            <li><a href="javascript:void(0)">Jackets</a></li>
+
+                            <li><a href="javascript:void(0)">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-down-menu">
+                    <div class="header-down-menu-inner">
+                        <ul class="menu-inner">
+                            <li><a class="home" href="./index.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./shop-detail.html">Shop Detail</a></li>
+                            <li class="pages"><a href="javascript:void(0)">Pages <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="pages-dropdown">
+                                    <li><a href="/shopping-cart.html">Shopping Cart</a></li>
+                                    <li clas="check"><a href="javscript:void(0)">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-down-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <div class="icon-zero">
+                            <p>0</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="icon-zero">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="home-contact container">
+        <a href="index.html">Home</a>
+        <span class="slash">/</span>
+        <span>Shop</span>
+        <span class="slash">/</span>
+        <span>Checkout</span>
+    </div>
+
+    <div class="billing-adres container">
+        <div class="billing-adres-left">
+            <div class="billing-adres-left-up">
+               <div class="billing-adres-left-up-title">
+                <h2>BILLING ADRESS</h2>
+               </div>
+               <div class="billing-adres-left-up-dash">
+
+               </div>
+            </div>
+
+            <div class="billing-adres-left-down">
+                <div class="billing-adres-left-down-left">
+                   <div class="billing-adres-input">
+                    <p>First Name</p>
+                    <input type="text" placeholder="John" required>
+                   </div>
+                   <div class="billing-adres-input">
+                    <p>E-mail</p>
+                    <input type="email" placeholder="example@email.com" required>
+                   </div>
+                   <div class="billing-adres-input">
+                    <p>Adress Line 1</p>
+                    <input type="text" placeholder="123 Street" required>
+                   </div>
+                   <div class="billing-adres-input">
+                    <p>Country</p>
+                    <select name="country">
+                        <option value="turkey">United States</option>
+                        <option value="usa">Afganistan</option>
+                        <option value="germany">Albaniya</option>
+                        <option value="france">Algeria</option>
+                      </select>
+                   </div>
+                   <div class="billing-adres-input">
+                    <p>State</p>
+                    <input type="text" placeholder="State" required>
+                   </div>
+
+                   <div class="all-price-checkout">
+                    <div class="checked-checkout">
+                        <input class="check-input-checkout" type="checkbox" name="" id="check2-checkout">
+                        <label class="check-checkout" for="check2-checkout"></label>
+                        <label class="allprice-checkout" for="check2-checkout">Create an account</label>
+                    </div>
+                </div>
+                   <div class="all-price-checkout-two">
+                    <div class="checked-checkout-two">
+                        <input class="check-input-checkout-two" type="checkbox" name="" id="check2-checkout-two">
+                        <label class="check-checkout-two" for="check2-checkout-two"></label>
+                        <label class="allprice-checkout-two" for="check2-checkout-two">Ship to different address</label>
+                    </div>
+                </div>
+                </div>
+
+                <div class="billing-adres-left-down-right">
+                    <div class="billing-adres-input">
+                        <p>Last Name</p>
+                        <input type="text" placeholder="Doe" required>
+                       </div>
+                    <div class="billing-adres-input">
+                        <p>Mobile No</p>
+                        <input type="text" placeholder="051 629 66 74" required>
+                       </div>
+                    <div class="billing-adres-input">
+                        <p>Adress Line 2</p>
+                        <input type="text" placeholder="123 Street" required>
+                       </div>
+                    <div class="billing-adres-input">
+                        <p>City</p>
+                        <input type="text" placeholder="New York" required>
+                       </div>
+                    <div class="billing-adres-input">
+                        <p>ZIP Code</p>
+                        <input type="text" placeholder="123" required>
+                       </div>
+                </div>
+            </div>
+        </div>
+        <div class="billing-adres-right">
+        <div class="billing-adres-right-up">
+            <div class="billing-adres-right-up-title">
+                <h2>ORDER TOTAL</h2>
+            </div>
+            <div class="billing-adres-right-up-dash">
+
+            </div>
+        </div>
+        <div class="billing-adres-right-down">
+            <div class="billing-adres-right-down-up">
+                <h4>Products</h4>
+            </div>
+            <div class="billing-adres-right-down-inner">
+              <div class="billing-adres-products">
+                <p>Product Name 1</p>
+                <p>$150</p>
+              </div>
+              <div class="billing-adres-products">
+                <p>Product Name 2</p>
+                <p>$150</p>
+              </div>
+              <div class="billing-adres-products">
+                <p>Product Name 3</p>
+                <p>$150</p>
+              </div>
+              <hr>
+
+              <div class="billing-subtotal">
+                <p>Subtotal</p>
+                <p>$150</p>
+              </div>
+              <div class="billing-subtotal">
+                <p>Shipping</p>
+                <p>$10</p>
+              </div>
+              <hr>
+
+              <div class="billing-total">
+                <p>Total</p>
+                <p>$160</p>
+              </div>
+
+            </div>
+        </div>
+
+        <div class="billing-payment">
+            <div class="billing-payment-up">
+                <div class="billing-payment-up-title">
+                    <h4>PAYMENT</h4>
+                </div>
+                <div class="billing-payment-up-dash">
+
+                </div>
+            </div>
+            <div class="billing-payment-down">
+                <div class="radios-checkout">
+                    <input class="radio-input-checkout" id="radio1-checkout" type="radio" name="radio-checkout">
+                    <label class="radio-checkout" for="radio1-checkout"></label>
+                    <label class="size-name-checkout" for="radio1-checkout">Paypal</label>
+                </div>
+                <div class="radios-checkout-two">
+                    <input class="radio-input-checkout-two" id="radio1-checkout-two" type="radio" name="radio-checkout">
+                    <label class="radio-checkout-two" for="radio1-checkout-two"></label>
+                    <label class="size-name-checkout-two" for="radio1-checkout-two">Direk Check</label>
+                </div>
+                <div class="radios-checkout-three">
+                    <input class="radio-input-checkout-three" id="radio1-checkout-three" type="radio" name="radio-checkout">
+                    <label class="radio-checkout-three" for="radio1-checkout-three"></label>
+                    <label class="size-name-checkout-three" for="radio1-checkout-three">Bank Transfer</label>
+                </div>
+                <button>Place Order</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer container">
+            <div class="touch">
+                <h3>GET IN TOUCH</h3>
+                <p class="touch-text">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed
+                    dolor. Rebum tempor no vero est magna amet no</p>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                <p><i class="fa-solid fa-envelope"></i> mail@domain.com</p>
+                <p><i class="fa-solid fa-phone"></i> 051 629 66 74</p>
+            </div>
+            <div class="quick">
+                <h3>QUICK SHOP</h3>
+                <ul>
+                    <li> <span>></span> <a href="">Home</a></li>
+                    <li><span>></span><a href=""> Our Shop</a></li>
+                    <li><span>></span><a href=""> Shop Detail</a></li>
+                    <li><span>></span><a href=""> Shopping Cart</a></li>
+                    <li><span>></span><a href=""> Checkout</a></li>
+                    <li><span>></span><a href=""> Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="quick">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                    <li> <span>></span> <a href="">Home</a></li>
+                    <li><span>></span><a href=""> Our Shop</a></li>
+                    <li><span>></span><a href=""> Shop Detail</a></li>
+                    <li><span>></span><a href=""> Shopping Cart</a></li>
+                    <li><span>></span><a href=""> Checkout</a></li>
+                    <li><span>></span><a href=""> Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                <div class="letter-input">
+                    <input type="email" placeholder="Your Email Adress" required>
+                    <button>Sign Up</button>
+                </div>
+                <div class="follow-us">
+                    <h4>FOLLOWUS</h4>
+                    <div class="follow-us-icons">
+                        <div class="twitter-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="fb-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="linkedin-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="instagram-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end container">
+            <div class="footer-end-left">
+                <p>© Domain.</p>
+                <h4>All Rights Reserved. Designed by</h4>
+                <span> HTML Codex</span>
+            </div>
+
+            <div class="footer-end-right">
+                <img src="./assets/image/payments.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="arrow-up2">
+            <a href="./index.html"> <i class="fa-solid fa-angles-up"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/slick.less">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-up">
+            <div class="header-up-inner container">
+                <div class="about">
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                    <a href="">Help</a>
+                    <a href="">FAQs</a>
+                </div>
+                <div class="aue">
+                    <div class="account">
+                        <a id="account-button" href="javascript:void(0)">My Account <i
+                                class="fa-solid fa-sort-down"></i></a>
+                        <div class="account-dropdown">
+                            <a href="">Sign in</a>
+                            <a href="">Sign up</a>
+                        </div>
+                    </div>
+                    <div class="usd">
+                        <a id="usd-btn" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
+                        <div class="usd-dropdown">
+                            <a href="">EUR</a>
+                            <a href="">GBP</a>
+                            <a href="">CAD</a>
+                        </div>
+                    </div>
+                    <div class="en">
+                        <a id="en-btn" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                        <div class="en-dropdown">
+                            <a href="">FR</a>
+                            <a href="">AR</a>
+                            <a href="">RU</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header-down-icons-mobile">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="icon-zero">
+                        <p>0</p>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="icon-zero">
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-midlle">
+            <div class="mobile-menu">
+                <ul class="menu-inner">
+                    <li><a class="mobile-home" href="index.html">Home</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="javascript:void(0)">Shop Detail</a></li>
+                    <li><a class="mobile-pages" href="javascript:void(0)">Pages <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="mobile-pages-dropdown">
+                            <li><a class="mobile-cart" href="./shopping-cart.html"></a>Shopping Cart</li>
+                            <li><a class="mobile-check" href="">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="header-midlle-inner container">
+                <div class="header-logo">
+                    <div class="multi-logo">
+                        <h2>MULTI</h2>
+                    </div>
+                    <div class="shop-logo">
+                        <h2>SHOP</h2>
+                    </div>
+                </div>
+
+                <div class="header-input">
+                    <input class="search-input" type="text" placeholder="Search for products" required>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="header-contact">
+                    <p>Customer Service</p>
+                    <h5>051 629 66 74</h5>
+
+                </div>
+
+                <div class="hamburger-icon">
+                    <button class="hamburger-button" onclick="toggleHeader()"> <i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-down">
+            <div class="header-down-inner container">
+                <div class="header-categories">
+                    <p><i class="fa-solid fa-bars hamburger"></i>Categories</p>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <div class="categories-dropdown">
+                        <ul>
+                            <li><a href="javascript:void(0)">Dresses <i
+                                        class="fa-solid fa-chevron-right right-arrow"></i></a>
+                                <ul class="dropdown-inner">
+                                    <li><a href="javascript:void(0)">Men's Dress</a></li>
+                                    <li><a href="javascript:void(0)">Women's Dress</a></li>
+                                    <li><a href="javascript:void(0)">Baby's Dress</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)">Shirts</a></li>
+
+                            <li><a href="javascript:void(0)">Jeans</a></li>
+
+                            <li><a href="javascript:void(0)">Swimwear</a></li>
+
+                            <li><a href="javascript:void(0)">Sportswear</a></li>
+
+                            <li><a href="javascript:void(0)">Jumpsuits</a></li>
+
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+
+                            <li><a href="javascript:void(0)">Jackets</a></li>
+
+                            <li><a href="javascript:void(0)">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-down-menu">
+                    <div class="header-down-menu-inner">
+                        <ul class="menu-inner">
+                            <li><a class="home" href="./index.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="">Shop Detail</a></li>
+                            <li class="pages"><a href="javascript:void(0)">Pages <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="pages-dropdown">
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li clas="check"><a href="./checkout.html">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-down-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <div class="icon-zero">
+                            <p>0</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="icon-zero">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="home-contact container">
+        <a href="index.html">Home</a>
+        <span class="slash">/</span>
+        <span>Contact</span>
+        <span class="slash">/</span>
+        <span>Shop Detail</span>
+    </div>
+
+    <div class="shop-detail container">
+        <div class="shop-detail-left">
+            <div class="slider">
+                <div class="slider-container">
+                  <div class="slide"><img src="./assets/image/product-1.jpg"></div>
+                  <div class="slide"><img src="./assets/image/product-2.jpg"></div>
+                  <div class="slide"><img src="./assets/image/product-3.jpg"></div>
+                  <div class="slide"><img src="./assets/image/product-4.jpg"></div>
+                  
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+              </div>
+        </div>
+        <div class="shop-detail-right">
+            <div class="product-name-here">
+                <h2>Product Name Goes Here</h2>
+                <div class="product-name-here-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(99 Reviews)</span>
+                </div>
+                <p>$150.00</p>
+                <p class="product-name-title">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam
+                    stet sit clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no seaNonumy</p>
+            </div>
+            <div class="product-sizes">
+                <div class="product-sizes-left">
+                    <h5>Sizes:</h5>
+                </div>
+                <div class="product-sizes-right">
+                    <div class="radios">
+                        <input class="radio-input" id="radio1" type="radio" name="radio">
+                        <label class="radio" for="radio1"></label>
+                        <label class="size-name" for="radio1">XS</label>
+                    </div>
+
+                    <div class="radios">
+                        <input class="radio-input-one" id="radio1-one" type="radio" name="radio">
+                        <label class="radio-one" for="radio1-one"></label>
+                        <label class="size-name" for="radio1-one">S</label>
+                    </div>
+
+                    <div class="radios">
+                        <input class="radio-input-three" id="radio1-three" type="radio" name="radio">
+                        <label class="radio-three" for="radio1-three"></label>
+                        <label class="size-name" for="radio1-three">M</label>
+                    </div>
+
+                    <div class="radios">
+                        <input class="radio-input-four" id="radio1-four" type="radio" name="radio">
+                        <label class="radio-four" for="radio1-four"></label>
+                        <label class="size-name" for="radio1-four">L</label>
+                    </div>
+
+                    <div class="radios">
+                        <input class="radio-input-five" id="radio1-five" type="radio" name="radio">
+                        <label class="radio-five" for="radio1-five"></label>
+                        <label class="size-name" for="radio1-five">XL</label>
+                    </div>
+                </div>
+            </div>
+            <div class="product-colors">
+                <div class="product-colors-left">
+                    <h5>Colors:</h5>
+                </div>
+                <div class="product-colors-right">
+                    <div class="radios">
+                        <input class="radio-input-six" id="radio1-six" type="radio" name="radio-color">
+                        <label class="radio-six" for="radio1-six"></label>
+                        <label class="size-name" for="radio1-six">Black</label>
+                    </div>
+                    <div class="radios">
+                        <input class="radio-input-seven" id="radio1-seven" type="radio" name="radio-color">
+                        <label class="radio-seven" for="radio1-seven"></label>
+                        <label class="size-name" for="radio1-seven">White</label>
+                    </div>
+                    <div class="radios">
+                        <input class="radio-input-eight" id="radio1-eight" type="radio" name="radio-color">
+                        <label class="radio-eight" for="radio1-eight"></label>
+                        <label class="size-name" for="radio1-eight">Red</label>
+                    </div>
+                    <div class="radios">
+                        <input class="radio-input-nine" id="radio1-nine" type="radio" name="radio-color">
+                        <label class="radio-nine" for="radio1-nine"></label>
+                        <label class="size-name" for="radio1-nine">Blue</label>
+                    </div>
+                    <div class="radios">
+                        <input class="radio-input-ten" id="radio1-ten" type="radio" name="radio-color">
+                        <label class="radio-ten" for="radio1-ten"></label>
+                        <label class="size-name" for="radio1-ten">Green</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-name-here-buttons">
+                <div class="minus-plus-buttons">
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="button-number">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="add-tocart">
+                    <button><i class="fa-solid fa-cart-shopping"></i> Add ToCart</button>
+                </div>
+            </div>
+
+            <div class="product-name-here-share">
+                <div class="share-left">
+                    <h5>Share on:</h5>
+                </div>
+                <div class="share-right">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+
+    </div> 
+
+ 
+<div class="description container">
+        <div class="description-up">
+            <h3 id="descrip" class="descr">Description</h3>
+            <h3 id="descr-info">Information</h3>
+            <h3 id="reviev" class="descr-review" onclick="reviewsBlock()">Reviews (0)</h3>
+        </div>
+        <div class="description-down">
+            <h2>Product Description</h2>
+            <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo
+                dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed
+                et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd
+                eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit
+                sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum,
+                diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+            <p>Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed
+                lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et
+                sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo.
+                Magna takimata justo et amet magna et.</p>
+        </div>
+    </div>
+
+    <div class="information container">
+        <div class="information-up">
+            <h3 id="descrip" onclick="infoNone()">Description</h3>
+            <h3 id="descr-info" class="info">Information</h3>
+            <h3 id="reviev" onclick="reviewsBlock()" >Reviews (0)</h3>
+        </div>
+        <div class="information-down">
+            <div class="information-down-title">
+                <h2>Additional Information</h2>
+                <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo
+                    dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed
+                    sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor
+                    kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo
+                    est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur
+                    at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea
+                    invidunt.</p>
+            </div>
+            <div class="information-down-inner">
+                <div class="information-down-left">
+                    <p>sit erat duo lorem duo ea consetetur, et eirmod takimata.</p>
+                    <p>amet kasd gubergren sit sanctus et lorem eos sadipscing at.</p>
+                    <p>duo amet accusam eirmod nonumy stet et et stet eirmod.</p>
+                    <p>Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.</p>
+                </div>
+                <div class="information-down-right">
+                    <p>sit erat duo lorem duo ea consetetur, et eirmod takimata.</p>
+                    <p>amet kasd gubergren sit sanctus et lorem eos sadipscing at.</p>
+                    <p>duo amet accusam eirmod nonumy stet et et stet eirmod.</p>
+                    <p>Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews container">
+        <div class="reviews-up">
+            <h3 id="descrip" onclick="reviewsNone()">Description</h3>
+            <h3 id="descr-info" onclick="reviewsInfo()" >Information</h3>
+            <h3 id="reviev" class="review" onclick="reviewsBlock()">Reviews (0)</h3>
+        </div>
+     <div class="reviews-down">
+        <div class="reviews-left">
+            <div class="reviews-left-up">
+                <h2>1 review for "Product Name"</h2>
+            </div>
+            <div class="reviews-left-down">
+                <div class="reviews-left-down-image">
+                    <img src="./assets/image/user.jpg" alt="">
+                </div>
+                <div class="reviews-left-down-info">
+                    <h4>John Doe - <i class="italic">01 Jan 2045</i></h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
+                </div>
+            </div>
+          </div>
+          <div class="reviews-right">
+           <div class="reviews-right-up">
+           <div class="reviews-right-up-title">
+            <h2>Leave a review</h2>
+            <p>Your email address will not be published. Required fields are marked *</p>
+           </div>
+           <div class="reviews-right-up-rating">
+            <p>Your Rating * :</p> <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+           </div>
+           </div>
+           <div class="reviews-right-down">
+            <p>Your Review *</p>
+            <textarea name="" id="" cols="100%" rows="10"></textarea>
+            <p>Your Name *</p>
+            <input type="text" required>
+            <p>Your Email *</p>
+            <input type="email" required>
+            <button>Leave Your Review</button>
+           </div>
+          </div>
+     </div>
+    </div>
+
+
+    <div class="you-may-also container">
+        <div class="you-may-also-up">
+          <div class="you-may-also-left">
+              <h2>YOU MAY ALSO LIKE</h2>
+          </div>
+          <div class="you-may-also-right">
+              
+          </div>
+        </div>
+        <div class="you-may-also-down">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-1.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-2.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-3.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-4.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-5.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-6.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-7.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-8.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-9.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="swiper-slide"><div class="featured-products-card">
+                    <div class="featured-products-card-image">
+                        <img src="./assets/image/product-1.jpg" alt="">
+                        <div class="featured-products-card-image-icons">
+                            <div class="shop-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="rotate-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-card-title">
+                        <p>Product Name Goes Here</p>
+                        <div class="featured-products-card-price">
+                            <h2>$123.00</h2>
+                            <h2>$123.00</h2>
+                        </div>
+                        <div class="featured-products-card-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(99)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                 
+                </div>
+                
+              </div>
+        </div>
+        </div>
+
+    <footer>
+        <div class="footer container">
+            <div class="touch">
+                <h3>GET IN TOUCH</h3>
+                <p class="touch-text">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed
+                    dolor. Rebum tempor no vero est magna amet no</p>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                <p><i class="fa-solid fa-envelope"></i> mail@domain.com</p>
+                <p><i class="fa-solid fa-phone"></i> 051 629 66 74</p>
+            </div>
+            <div class="quick">
+                <h3>QUICK SHOP</h3>
+                <ul>
+                    <li> <span>></span> <a href="">Home</a></li>
+                    <li><span>></span><a href=""> Our Shop</a></li>
+                    <li><span>></span><a href=""> Shop Detail</a></li>
+                    <li><span>></span><a href=""> Shopping Cart</a></li>
+                    <li><span>></span><a href=""> Checkout</a></li>
+                    <li><span>></span><a href=""> Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="quick">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                    <li> <span>></span> <a href="">Home</a></li>
+                    <li><span>></span><a href=""> Our Shop</a></li>
+                    <li><span>></span><a href=""> Shop Detail</a></li>
+                    <li><span>></span><a href=""> Shopping Cart</a></li>
+                    <li><span>></span><a href=""> Checkout</a></li>
+                    <li><span>></span><a href=""> Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                <div class="letter-input">
+                    <input type="email" placeholder="Your Email Adress" required>
+                    <button>Sign Up</button>
+                </div>
+                <div class="follow-us">
+                    <h4>FOLLOWUS</h4>
+                    <div class="follow-us-icons">
+                        <div class="twitter-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="fb-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="linkedin-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="instagram-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end container">
+            <div class="footer-end-left">
+                <p>© Domain.</p>
+                <h4>All Rights Reserved. Designed by</h4>
+                <span> HTML Codex</span>
+            </div>
+
+            <div class="footer-end-right">
+                <img src="./assets/image/payments.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="arrow-up2">
+            <a href="./index.html"> <i class="fa-solid fa-angles-up"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/slick.min.js"></script>
+<script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/shop-detail.js"></script>
+</body>
+
+</html>
